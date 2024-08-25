@@ -1,1 +1,7 @@
-
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='Initial_Investment_USD', y='GHG_Emission_Reduction_tCO2e', hue='Type_of_Renewable_Energy', palette='viridis', data=df)
+plt.title('Initial Investment vs. GHG Emission Reduction')
+plt.xlabel('Initial Investment (USD)')
+plt.ylabel('GHG Emission Reduction (tCO2e)')
+plt.legend(title='Type of Renewable Energy', labels=['Solar', 'Wind', 'Hydroelectric', 'Geothermal', 'Biomass', 'Tidal', 'Wave'])
+plt.show()
