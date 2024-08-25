@@ -1,1 +1,1 @@
-
+sns.set(style="whitegrid")
