@@ -1,1 +1,7 @@
-
+plt.figure(figsize=(10, 6))
+sns.barplot(x='Type_of_Renewable_Energy', y='Installed_Capacity_MW', data=df, ci=None, palette='viridis')
+plt.title('Installed Capacity of Different Types of Renewable Energy')
+plt.xlabel('Type of Renewable Energy')
+plt.ylabel('Installed Capacity (MW)')
+plt.xticks(ticks=[0, 1, 2, 3, 4, 5, 6], labels=['Solar', 'Wind', 'Hydroelectric', 'Geothermal', 'Biomass', 'Tidal', 'Wave'])
+plt.show()
